@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: fletzxing
+Version: 0.0.1
+Summary: Zxing control for Flet
+Author-email: Flet contributors <microdevprog@gmail.com>
+Project-URL: Homepage, https://github.com/usermicrodevices
+Project-URL: Documentation, https://github.com/usermicrodevices/fletzxing
+Project-URL: Repository, https://github.com/usermicrodevices/fletzxing
+Project-URL: Issues, https://github.com/usermicrodevices/fletzxing/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: flet>=0.27.6
+
+# fletzxing
+Zxing control for Flet
+
+## Installation
+
+Add dependency to `pyproject.toml` of your Flet app:
+
+* **Git dependency**
+
+Link to git repository:
+
+```
+dependencies = [
+  "fletzxing @ git+https://github.com/usermicrodevices/fletzxing",
+  "flet>=0.27.6",
+]
+```
+
+* **PyPi dependency**  
+
+If the package is published on pypi.org:
+
+```
+dependencies = [
+  "fletzxing",
+  "flet>=0.27.6",
+]
+```
+
+Build your app:
+```
+flet build macos -v
+```
+
+## Documentation
+
+[Link to documentation](https://usermicrodevices.github.io/fletzxing/)
+
+## Debug
+adb -s [DEVICE] shell logcat > debug.log
+cmd package list packages -f com.github.fletzxing.fletzxing_example
+dumpsys window windows | grep fletzxing
+am start -S -D -W -n com.github.fletzxing.fletzxing_example/com.github.fletzxing.fletzxing_example.MainActivity
+

@@ -1,0 +1,42 @@
+[project]
+name = "fletzxing"
+version = "0.0.1"
+description = "Zxing control for Flet"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "FletZxing contributors", email = "microdevprog@gmail.com" }
+]
+dependencies = [
+    "flet>=0.27.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/usermicrodevices"
+Documentation = "https://github.com/usermicrodevices/fletzxing"
+Repository = "https://github.com/usermicrodevices/fletzxing"
+Issues = "https://github.com/usermicrodevices/fletzxing/issues"
+
+[tool.setuptools.package-data]
+"flutter.flet_zxing" = ["**/*"]
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]>=0.27.6",
+    "mkdocs", 
+    "mkdocs-material",
+    "mkdocstrings[python]"
+]
+
+[tool.poetry.group.dev.dependencies]
+flet = {extras = ["all"], version = "0.27.6"}
+mkdocs = "*"
+mkdocstrings = { extras = ["python"], version = "*" }
+mkdocs-material = "*"
+
+[tool.setuptools]
+license-files = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

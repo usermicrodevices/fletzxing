@@ -1,0 +1,50 @@
+[project]
+name = "fletzxing_example"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "fletzxing developer", email = "microdevprog@gmail.com" }
+]
+dependencies = [
+  "fletzxing @ git+https://github.com/usermicrodevices/fletzxing",
+  "flet>=0.27.6",
+]
+
+[tool.flet]
+org = "com.github.fletzxing"
+
+product = "fletzxing-example"
+
+# company name to display in about app dialogs
+company = "fletzxing"
+
+# copyright text to display in about app dialogs
+copyright = "Copyright (C) 2025 by https://github.com/usermicrodevices"
+
+permissions = ["camera"]
+
+[tool.flet.android.permission]
+"android.permission.CAMERA" = true
+
+[tool.flet.android.feature]
+"android.hardware.camera" = true
+
+[tool.flet.app]
+path = "src"
+
+[tool.flet.dev_packages]
+flet-zxing = "../.." # relative path
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]>=0.27.6",
+]
+
+[tool.uv.sources]
+flet-zxing = { path = "../../", editable = true }
+
+[tool.poetry.group.dev.dependencies]
+flet = {extras = ["all"], version = "0.27.6"}
+flet-zxing = {path = "../../", develop = true}

@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/fletzxing/__init__.py
+src/fletzxing/fletzxing.py
+src/fletzxing.egg-info/PKG-INFO
+src/fletzxing.egg-info/SOURCES.txt
+src/fletzxing.egg-info/dependency_links.txt
+src/fletzxing.egg-info/requires.txt
+src/fletzxing.egg-info/top_level.txt
+src/flutter/flet_zxing/CHANGELOG.md
+src/flutter/flet_zxing/LICENSE
+src/flutter/flet_zxing/README.md
+src/flutter/flet_zxing/pubspec.lock
+src/flutter/flet_zxing/pubspec.yaml
+src/flutter/flet_zxing/lib/flet_zxing.dart
+src/flutter/flet_zxing/lib/src/create_control.dart
+src/flutter/flet_zxing/lib/src/flet_zxing.dart

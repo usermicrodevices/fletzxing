@@ -1,0 +1,7 @@
+site_name: FletZxing
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
