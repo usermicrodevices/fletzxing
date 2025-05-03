@@ -1,6 +1,6 @@
 import logging, flet, platform
 
-from flet_zxing import ScanSuccessEvent, MultiScanModeChangedEvent, FletZxing
+from fletzxing import ScanSuccessEvent, MultiScanModeChangedEvent, FletZxing
 
 if flet.utils.platform_utils.is_mobile() and platform.system() in ['Linux', 'Android']:
     from third_party.chaquopy.stream import redirect_stdout_stderr
