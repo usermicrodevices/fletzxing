@@ -35,7 +35,7 @@ permissions = ["camera"]
 path = "src"
 
 [tool.flet.dev_packages]
-flet-zxing = "../.." # relative path
+fletzxing = "../.." # relative path
 
 [tool.uv]
 dev-dependencies = [
@@ -43,8 +43,8 @@ dev-dependencies = [
 ]
 
 [tool.uv.sources]
-flet-zxing = { path = "../../", editable = true }
+fletzxing = { path = "../../", editable = true }
 
 [tool.poetry.group.dev.dependencies]
 flet = {extras = ["all"], version = "0.27.6"}
-flet-zxing = {path = "../../", develop = true}
+fletzxing = {path = "../../", develop = true}
