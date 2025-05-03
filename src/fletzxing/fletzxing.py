@@ -92,9 +92,9 @@ class FletZxing(ConstrainedControl):
 
 class ScanSuccessEvent(ControlEvent):
     def __init__(self, e: ControlEvent):
-        super().__init__(e.target, e.name, e.data, e.control, e.page)
+        super().__init__(e.target, e.name, eval(e.data), e.control, e.page)
 
 
 class MultiScanModeChangedEvent(ControlEvent):
     def __init__(self, e: ControlEvent):
-        super().__init__(e.target, e.name, e.data, e.control, e.page)
+        super().__init__(e.target, e.name, eval(e.data), e.control, e.page)
